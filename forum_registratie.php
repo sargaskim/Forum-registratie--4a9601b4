@@ -27,7 +27,7 @@
 
         <h1>Form registratie</h1>
 
-        <form action="registratie_handler.php" method="get" class="form">
+        <form action="registratie_handler.php" method="post" class="form">
             <div class="regristratie">
                 <label for="name">Enter your user name: </label>
                 <label for="email">Enter your email: </label>
@@ -47,7 +47,7 @@
         
         session_start();
 
-        if (isset($_GET["name"], $_GET["email"], $_GET["age"])){
+        if (isset($_GET["name"], $_GET["email"], $_GET["age"])) {
             setcookie("naamkoekje", $_GET["name"], time()+3600);
             setcookie("emailkoekje", $_GET["email"], time()+3600);
             setcookie("leeftijdkoekje", $_GET["age"], time()+3600);

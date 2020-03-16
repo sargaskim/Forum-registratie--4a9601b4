@@ -8,7 +8,7 @@
             display: flex;
             flex-direction: row;
         }
-        .regristratie{
+        .regristratie {
             display: flex;
             flex-direction: column;
             margin: 3px;   
@@ -28,9 +28,9 @@
 
     <?PHP
     
-    echo "your name is ". $_COOKIE["naamkoekje"]. "<br>";
-    echo "your email is ". $_COOKIE["emailkoekje"]. "<br>";
-    echo "your age is ". $_COOKIE["leeftijdkoekje"]. "<br>";
+    echo "your name is ". $_POST["name"]. "<br>";
+    echo "your email is ". $_POST["email"]. "<br>";
+    echo "your age is ". $_POST["age"]. "<br>";
 
     
     ?>
